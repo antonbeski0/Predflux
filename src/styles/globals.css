@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 html,
 body,
@@ -7,42 +8,49 @@ body,
 
 body {
   margin: 0;
-  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-  background-color: #1a1a1a; /* Dark background */
-  color: #FFFFFF; /* Light text */
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #FFFFFF;
 }
 
-/* Glassmorphic card effect */
 .card {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
   border-radius: 24px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 32px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
-/* Glowing button */
 button {
-  background: #A9A9A9; /* Light gray from palette */
-  color: #000000;
+  background: linear-gradient(90deg, #4b6cb7, #182848);
+  color: #FFFFFF;
   border: none;
-  padding: 12px 20px;
-  border-radius: 8px;
+  padding: 15px 25px;
+  border-radius: 12px;
   cursor: pointer;
-  font-size: 16px;
-  box-shadow: 0 0 10px rgba(169, 169, 169, 0.7);
-  transition: all 0.3s ease;
+  font-size: 18px;
+  font-weight: 700;
+  box-shadow: 0 0 15px rgba(75, 108, 183, 0.8);
+  transition: all 0.4s ease;
 }
 
 button:hover {
-  box-shadow: 0 0 20px rgba(169, 169, 169, 1);
-  transform: translateY(-2px);
+  box-shadow: 0 0 25px rgba(75, 108, 183, 1);
+  transform: translateY(-3px);
 }
 
 input {
-  padding: 10px;
-  border-radius: 6px;
+  padding: 12px;
+  border-radius: 8px;
   border: 1px solid #555;
-  background-color: #333;
+  background-color: #2c3e50;
   color: #E0E0E0;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #4b6cb7;
+  box-shadow: 0 0 10px rgba(75, 108, 183, 0.5);
 }
