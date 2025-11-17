@@ -15,7 +15,10 @@ export default function Home() {
   const [model, setModel] = useState(null);
 
   return (
-    <div style={{ padding: 20, minHeight: '100vh' }}>
+    <div style={{ padding: 20, minHeight: '100vh', position: 'relative' }}>
+      <div style={{ position: 'absolute', top: 20, right: 20 }}>
+        <DevicePerformance />
+      </div>
       <h1 style={{ marginBottom: 10 }}>Neural Stock Visualizer — Demo</h1>
       <p style={{ opacity: 0.8 }}>Record your screen (or upload CSV), digitize price points, train a tiny LSTM in the browser, and view a 3D animation.</p>
 
@@ -45,9 +48,6 @@ export default function Home() {
               <NeuralNetwork3D model={model} />
           </div>
       </div>
-      <div className="card" style={{ marginTop: 20 }}>
-        <DevicePerformance />
-        </div>
 
       <p style={{ marginTop: 18, opacity: 0.7 }}>Notes: App runs fully in browser. The recorder will ask permission and start only after you allow it. Use CSV uploads if you want exact numeric data.</p>
     </div>
