@@ -16,7 +16,6 @@ export default function Home() {
     <div style={{ padding: 20, minHeight: '100vh', position: 'relative' }}>
 
       <div className="card" style={{ marginTop: 20 }}>
-        <h3>Screen Recorder / Upload</h3>
         <Recorder />
         <hr style={{ margin: '12px 0', borderColor: 'rgba(255, 255, 255, 0.2)' }} />
         <h3>Digitizer</h3>
@@ -27,7 +26,6 @@ export default function Home() {
         <h3>Train & Forecast</h3>
         <ForecastModel series={series} onPredict={setPred} onModelTrained={setModel} />
         <hr style={{ margin: '12px 0', borderColor: 'rgba(255, 255, 255, 0.2)' }} />
-        <h3>3D Visual</h3>
         <div style={{ height: 420 }}>
           <Visualizer3D series={series} pred={pred} />
         </div>
