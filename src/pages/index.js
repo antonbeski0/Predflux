@@ -38,6 +38,7 @@ export default function Home() {
       </div>
 
       <p style={{ marginTop: 18, opacity: 0.7 }}>Notes:<br/>Runs fully in-browser. Screen recording begins only with user approval. CSV uploads supported for precise data input.</p>
+      <p style={{ marginTop: 18, opacity: 0.7 }}>BUILT BY ANTON BESKI.M</p>
     </div>
   )
 }
