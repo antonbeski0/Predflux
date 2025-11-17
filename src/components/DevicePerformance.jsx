@@ -67,7 +67,7 @@ export default function DevicePerformance() {
   }, []);
 
   return (
-    <div style={{textAlign: 'right', opacity: 0.7}}>
+    <div style={{textAlign: 'right', opacity: 0.7, color: 'white'}}>
       <p style={{margin: 0, fontSize: '0.9rem'}}>TF.js v{performanceInfo.tfjsVersion} | Backend: <strong>{performanceInfo.backend}</strong></p>
       <p style={{margin: 0, fontSize: '0.8rem'}}>GPU: {performanceInfo.gpuInfo}</p>
       <p style={{margin: 0, fontSize: '0.8rem'}}>{performanceInfo.browser} on {performanceInfo.os}</p>
