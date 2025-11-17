@@ -72,7 +72,7 @@ export default function Digitizer({onSeries}){
       <div style={{display:'flex', gap:8}}>
         <input type="file" accept="image/*" onChange={handleUpload} />
         <button onClick={clear}>Clear Points</button>
-        <button onClick={exportSeries}>Export Series (to Model)</button>
+        <button onClick={exportSeries}>EXPORT SERIES</button>
       </div>
       <div style={{marginTop:8}}>
         {imgSrc ? (

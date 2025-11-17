@@ -40,7 +40,7 @@ export default function Recorder(){
   return (
     <div>
       <div style={{display:'flex', gap:8}}>
-        <button onClick={startRecording}>Start Screen Recording (will request permission)</button>
+        <button onClick={startRecording}>SCREEN SHARE</button>
         <button onClick={captureFrame} disabled={!stream}>Capture Frame</button>
         <button onClick={stop}>Stop</button>
       </div>
