@@ -4,7 +4,6 @@ import Digitizer from '../components/Digitizer'
 import ForecastModel from '../components/ForecastModel'
 import React, { useState } from 'react'
 import StockMarket from '../components/StockMarket'
-import DevicePerformance from '../components/DevicePerformance'
 
 const Visualizer3D = dynamic(() => import('../components/Visualizer3D'), { ssr: false })
 const NeuralNetwork3D = dynamic(() => import('../components/NeuralNetwork3D'), { ssr: false })
@@ -16,9 +15,6 @@ export default function Home() {
 
   return (
     <div style={{ padding: 20, minHeight: '100vh', position: 'relative' }}>
-      <div style={{ position: 'absolute', top: 20, right: 20 }}>
-        <DevicePerformance />
-      </div>
       <h1 style={{ marginBottom: 10 }}>Neural Stock Visualizer — Demo</h1>
       <p style={{ opacity: 0.8 }}>Record your screen (or upload CSV), digitize price points, train a tiny LSTM in the browser, and view a 3D animation.</p>
 
